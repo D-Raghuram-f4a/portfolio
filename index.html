@@ -629,34 +629,34 @@
         <article class="glass-panel project-card">
           <div class="project-top">
             <div>
-              <h3 class="project-title">MealSynx</h3>
+              <h3 class="project-title">MealSynx V2</h3>
               <p class="project-subtitle">Intelligent Campus Food Demand, Waste &amp; Resource Optimization Platform</p>
             </div>
-            <a href="https://github.com/D-Raghuram-f4a/mealsynx" target="_blank" rel="noopener" class="repo-link">
-              github.com/D-Raghuram-f4a/mealsynx &nearr;
+            <a href="https://github.com/D-Raghuram-f4a/mealsynx-v2" target="_blank" rel="noopener" class="repo-link">
+              github.com/D-Raghuram-f4a/mealsynx-v2 &nearr;
             </a>
           </div>
 
           <p class="project-summary">
-            Multi-tier campus dining optimization system integrating real-time demand forecasting, dynamic multi-canteen load balancing, and closed-loop waste analytics to eliminate overproduction and peak-hour stockouts.
+            Multi-tier campus dining optimization system integrating real-time demand forecasting, NLP feedback analytics, dynamic multi-canteen load balancing, and closed-loop waste analytics to eliminate overproduction and peak-hour stockouts.
           </p>
 
-          <div class="arch-diagram" role="region" aria-label="MealSynx System Architecture Flow">
+          <div class="arch-diagram" role="region" aria-label="MealSynx V2 System Architecture Flow">
             <span class="arch-label">System Architecture Pipeline</span>
             <div class="arch-flow">
               <div class="arch-node">
                 <div class="arch-node-title">01. Ingestion &amp; Context</div>
-                <div class="arch-node-desc">Concurrent canteen terminals, wallet/UPI transactions, weather &amp; campus event signals.</div>
+                <div class="arch-node-desc">Kotlin 1.9 mobile clients, canteen terminals, wallet/UPI transactions, weather &amp; campus event signals.</div>
               </div>
               <div class="arch-arrow" aria-hidden="true">&rarr;</div>
               <div class="arch-node highlight">
-                <div class="arch-node-title">02. Java 21 Core &amp; Strategy Engine</div>
-                <div class="arch-node-desc">Embedded REST API unifying 10 modules, automated BOM explosion &amp; "What-If" simulation engine.</div>
+                <div class="arch-node-title">02. Java 21 Core &amp; NLP Engine</div>
+                <div class="arch-node-desc">Embedded REST API unifying 10+ modules, automated BOM explosion, NLP "What-If" simulation &amp; 5-aspect sentiment analyzer.</div>
               </div>
               <div class="arch-arrow" aria-hidden="true">&rarr;</div>
               <div class="arch-node">
-                <div class="arch-node-title">03. Persistence &amp; Big Data</div>
-                <div class="arch-node-desc">MySQL 8.4 (12-table 3NF schema via JDBC), Apache Kafka event streams &amp; Spark batch modeling.</div>
+                <div class="arch-node-title">03. Hybrid Persistence &amp; Big Data</div>
+                <div class="arch-node-desc">MySQL 8.4 (12-table 3NF schema via pooled JDBC + binary failover), Apache Kafka streams &amp; Spark (Scala) modeling.</div>
               </div>
             </div>
           </div>
@@ -664,30 +664,33 @@
           <div class="pillars-grid">
             <div class="pillar-item">
               <h4>Multi-Tier System Architecture</h4>
-              <p>Engineered core backend services in Java 21 with an embedded REST API, unifying 10 end-to-end modules across demand forecasting, multi-canteen load balancing, and closed-loop waste analytics.</p>
+              <p>Engineered core backend services in Java 21 with an embedded REST API and Kotlin 1.9 mobile client DTOs, unifying 10+ end-to-end modules across demand forecasting, dynamic multi-canteen load balancing, student cart customization, worker payroll, and closed-loop waste analytics.</p>
             </div>
             <div class="pillar-item">
-              <h4>3NF Relational Database Design</h4>
-              <p>Architected a normalized 12-table schema in MySQL 8.4 integrated via JDBC to automate recipe Bill of Materials (BOM) ingredient explosion and ACID-compliant wallet/UPI transaction persistence.</p>
+              <h4>3NF Relational Database &amp; Security</h4>
+              <p>Architected a normalized 12-table schema in MySQL 8.4 integrated via thread-safe JDBC connection pooling and binary failover storage to automate recipe Bill of Materials (BOM) ingredient explosion, salted SHA-256 authentication, and ACID-compliant wallet/UPI transaction persistence.</p>
             </div>
             <div class="pillar-item">
-              <h4>Extensible Simulation Engine</h4>
-              <p>Implemented the Strategy design pattern to execute "What-If" demand simulations incorporating contextual variables such as weather shifts and campus event schedules.</p>
+              <h4>Extensible Simulation &amp; NLP Engine</h4>
+              <p>Implemented the Strategy design pattern to execute "What-If" demand simulations with natural language query parsing and weather/campus event modeling, paired with a 5-aspect NLP sentiment analyzer for automated student feedback classification.</p>
             </div>
             <div class="pillar-item">
               <h4>Streaming &amp; Big Data Pipeline</h4>
-              <p>Built an event-driven ingestion stream using Apache Kafka paired with batch demand modeling in Apache Spark to minimize food overproduction and peak-hour stockouts.</p>
+              <p>Built an event-driven ingestion stream using Apache Kafka paired with batch demand modeling in Apache Spark (Scala) to minimize food overproduction and peak-hour stockouts.</p>
             </div>
           </div>
 
           <div class="tech-tags" aria-label="Technologies used">
             <span class="tag">Java 21</span>
+            <span class="tag">Kotlin 1.9</span>
+            <span class="tag">Scala</span>
             <span class="tag">MySQL 8.4 (3NF)</span>
-            <span class="tag">JDBC</span>
+            <span class="tag">Pooled JDBC</span>
             <span class="tag">Embedded REST API</span>
             <span class="tag">Apache Kafka</span>
             <span class="tag">Apache Spark</span>
-            <span class="tag">Kotlin</span>
+            <span class="tag">NLP Sentiment</span>
+            <span class="tag">SHA-256</span>
             <span class="tag">Strategy Pattern</span>
           </div>
         </article>
@@ -701,15 +704,15 @@
         <div class="skills-grid">
           <div class="glass-panel skill-card">
             <div class="skill-category">Programming Languages</div>
-            <p class="skill-list">Python, Java (Java 21), SQL, C, C++</p>
+            <p class="skill-list">Python, Java (Java 21), Kotlin, Scala, SQL, C, C++</p>
           </div>
           <div class="glass-panel skill-card">
             <div class="skill-category">Data Analysis &amp; Big Data</div>
-            <p class="skill-list">Apache Spark, Apache Kafka, NumPy, Pandas, Matplotlib, Seaborn</p>
+            <p class="skill-list">Apache Spark, Apache Kafka, NumPy, Pandas, Matplotlib, Seaborn, NLP Sentiment Analysis</p>
           </div>
           <div class="glass-panel skill-card">
             <div class="skill-category">Backend, Web &amp; Databases</div>
-            <p class="skill-list">MySQL 8.4 (3NF), Django, JDBC, REST APIs, Java Swing, Cryptographic Hashing, HTML5, CSS3</p>
+            <p class="skill-list">MySQL 8.4 (3NF), Django, JDBC Connection Pooling, REST APIs, Java Swing, Salted SHA-256 Hashing, HTML5, CSS3</p>
           </div>
           <div class="glass-panel skill-card">
             <div class="skill-category">Core Concepts &amp; Tools</div>
